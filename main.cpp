@@ -7,6 +7,6 @@ using namespace std;
 int main()  
 {
      setlocale(LC_ALL, "rus");
-     regex reg ("([a-zA-Z]+('|-)[a-zA-Z]+)|([a-zA-Z]+)|(\\"(([a-zA-Z]+('|-)[a-zA-Z]+)|([a-zA-Z]+)\\s*)*\\"))");
-     
+     regex reg(R"(([a-zA-Z]+(?:['-][a-zA-Z]+)|[a-zA-Z]+|\"((?:[a-zA-Z]+(?:['-][a-zA-Z]+)|[a-zA-Z]+\s*)*)\")");
+
 }
