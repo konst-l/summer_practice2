@@ -1,1 +1,12 @@
-pwehpohoh
+#include <iostream>
+#include <regex>
+#include <string>
+
+using namespace std;
+
+int main()  
+{
+     setlocale(LC_ALL, "rus");
+     regex reg ("([a-zA-Z]+('|-)[a-zA-Z]+)|([a-zA-Z]+)|(\\"(([a-zA-Z]+('|-)[a-zA-Z]+)|([a-zA-Z]+)\\s*)*\\"))");
+     
+}
