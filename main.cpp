@@ -24,21 +24,18 @@ void process_line(const string& s, ofstream& output_file) {
     string s5 = regex_replace(s4,
         spa,
         ",");
+    output_file << s5 << '\n';
+
 }
 
 int main()  
 {
-<<<<<<< HEAD
-     setlocale(LC_ALL, "rus");
-     regex reg(R"(([a-zA-Z]+(['-][a-zA-Z]+)|[a-zA-Z]+|\"(([a-zA-Z]+(['-][a-zA-Z]+)|[a-zA-Z]+\s*)*)\")");
-=======
     setlocale(LC_ALL, "rus");
     ifstream input_file("input.txt");
     if (!input_file.is_open()) {
         cerr << "Не удалось открыть файл input.txt" << endl;
         return 1;
     }
->>>>>>> 554d81f0828f235a7f50f3a19765259d8b7d2db8
 
     ofstream output_file("output.txt");
     if (!output_file.is_open()) {
